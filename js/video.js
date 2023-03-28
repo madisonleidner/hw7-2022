@@ -77,7 +77,7 @@ document.querySelector('#mute').addEventListener("click", function() {
 //Volume Slider - Change the volume based on the slider and update the volume information.
 volume_slider.addEventListener("change", function(){
 	video.volume = volume_slider.value / 100;
-	volume.innerHTML = video.volume + 100 + "%";
+	volume.innerHTML = video.volume * 100 + "%";
 })
 
 //Styled - Utilize the existing oldSchool class on the video element
