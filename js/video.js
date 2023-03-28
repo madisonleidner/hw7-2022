@@ -45,7 +45,7 @@ slow_down.addEventListener("click", function() {
 })
 
 //Speed up - Increase the current video speed each time the button is clicked and log the new speed to the console.  Change it by an amount proportional to the slow down. CHECK THIS!!  If you slow down three times and then speed up three times you should be within 5 digits of 100% again.
-skip_ahead.addEventListener("click", function() {
+speed_up.addEventListener("click", function() {
 	video.playbackRate *= 1.10;
 	console.log("New speed: " + video.playbackRate);
 })
@@ -77,7 +77,7 @@ document.querySelector('#mute').addEventListener("click", function() {
 //Volume Slider - Change the volume based on the slider and update the volume information.
 volume_slider.addEventListener("change", function(){
 	video.volume = volume_slider.value / 100;
-	volume.innerHTML = video.volume + 100 + "%"
+	volume.innerHTML = video.volume + 100 + "%";
 })
 
 //Styled - Utilize the existing oldSchool class on the video element
